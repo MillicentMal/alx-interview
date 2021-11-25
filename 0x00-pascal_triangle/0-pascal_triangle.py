@@ -32,4 +32,5 @@ def pascal_triangle(n):
   """Creates the pascal triangle with n rows
   """
     for i in range(j):
-        print(list((nCr(i, j) for j in range(0, i+1))))
+        pascal_list.append((list((nCr(i, j) for j in range(0, i+1)))))
+    return pascal_list
