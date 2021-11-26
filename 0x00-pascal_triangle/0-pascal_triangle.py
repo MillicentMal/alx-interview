@@ -1,16 +1,16 @@
 #!/usr/bin/python3
-"""
+    """
 Contains the Pascal triangle implementation
 along with helper functions
 From the binomial expansion of (a + b)**n, to get the coefficients of terms we use nCr:
 These coefficients correspond to the numbers in the Pascal Triangle at row n. 
-"""
+    """
 
 def factorial(n):
-"""
-Returns the factorial of a given number
-Needed in the implementation of the nCr function
-"""
+    """
+    Returns the factorial of a given number
+    Needed in the implementation of the nCr function
+    """
     result = 1
     if n == 0 and n == 1:
 	    return 1
@@ -23,7 +23,7 @@ Needed in the implementation of the nCr function
     return result
 
 def nCr(n, r):
-  """helper function for pascal_triangle
+    """helper function for pascal_triangle
   Computes nCr which is useful in creating the triangle
 """
     return int(factorial(n) / (factorial(r)* factorial(n-r))) 
