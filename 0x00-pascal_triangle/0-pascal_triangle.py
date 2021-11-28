@@ -1,15 +1,9 @@
 #!/usr/bin/python3
-"""
-Contains the Pascal triangle implementation
-along with helper functions
-From the binomial expansion of (a + b)**n, to get the coefficients of terms we use nCr:
-These coefficients correspond to the numbers in the Pascal Triangle at row n.
-"""
+"""Contains the Pascal triangle implementation"""
 
 
 def pascal_triangle(n):
-    """Creates the pascal triangle with n rows
-    """
+    """Creates the pascal triangle with n rows"""
     pascal_list = []
     for i in range(n):
         pascal_list.append((list((nCr(i, j) for j in range(0, i + 1)))))
